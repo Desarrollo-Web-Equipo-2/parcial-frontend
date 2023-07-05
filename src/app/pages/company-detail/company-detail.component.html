@@ -3,6 +3,10 @@
     <h1>Name: {{company.name}}</h1>
     <h2>Url: <a>{{company.url}}</a></h2>
     <h2>Notes: {{company.notes}}</h2>
+
+    <ion-button (click)="delete()">
+        <ion-icon name="trash-outline"></ion-icon>
+    </ion-button>
 </ng-template>
 
 
