@@ -15,7 +15,7 @@ export class CompanyService {
     }
 
     getCompanies(){
-        return this.http.get('http://localhost:3000/api/company');
+        return this.http.get<Company[]>('http://localhost:3000/api/company');
     }
 
     getCompanyById(id: number){

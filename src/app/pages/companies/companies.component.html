@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content>
-
+    <app-companies-card *ngFor="let company of companies" [company]="company"></app-companies-card>
 </ion-content>
 
 <ion-footer>

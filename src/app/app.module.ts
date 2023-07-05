@@ -14,9 +14,10 @@ import { CompaniesComponent } from './pages/companies/companies.component';
 import { PersonsComponent } from './pages/persons/persons.component';
 import { TopToolbarComponent } from './components/top-toolbar/top-toolbar.component';
 import { BottomToolbarComponent } from './components/bottom-toolbar/bottom-toolbar.component';
+import { CompaniesCardComponent } from './components/companies-card/companies-card.component';
 
 @NgModule({
-    declarations: [AppComponent, LoginComponent, RegisterComponent, CompaniesComponent, PersonsComponent, TopToolbarComponent, BottomToolbarComponent],
+    declarations: [AppComponent, LoginComponent, RegisterComponent, CompaniesComponent, PersonsComponent, TopToolbarComponent, BottomToolbarComponent, CompaniesCardComponent],
     imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
