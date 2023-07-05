@@ -13,6 +13,11 @@ const routes: Routes = [
         canActivate: [AuthenticationGuard]
     },
     {
+        path: 'companies/:id',
+        component: CompaniesComponent,
+        canActivate: [AuthenticationGuard]
+    },
+    {
         path: 'persons',
         component: PersonsComponent,
         canActivate: [AuthenticationGuard]
@@ -29,7 +34,7 @@ const routes: Routes = [
         path: '**',
         redirectTo: 'companies',
         pathMatch: 'full'
-    },
+    }
 ];
 
 @NgModule({

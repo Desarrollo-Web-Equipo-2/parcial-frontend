@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Company } from '../../interfaces/company';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-companies-card',
@@ -10,8 +11,12 @@ export class CompaniesCardComponent {
 
     @Input() company!: Company;
 
-    constructor() {
+    constructor(private router: Router) {
     }
 
 
+    details() {
+        console.log('details')
+        this.router.navigate(['/companies', this.company.id]);
+    }
 }
