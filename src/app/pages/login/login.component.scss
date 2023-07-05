@@ -1,0 +1,31 @@
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+ion-button {
+  height: 45px;
+}
+
+p {
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+ion-item{
+  width: 90%;
+  --border-color: var(--ion-color-step-300, #b3b3b3);
+}

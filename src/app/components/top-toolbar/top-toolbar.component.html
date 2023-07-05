@@ -1,0 +1,13 @@
+<ion-toolbar>
+
+    <ion-buttons slot="start">
+
+        <ion-back-button *ngIf="leftItem === 'back'" defaultHref="/home"></ion-back-button>
+
+    </ion-buttons>
+
+    <ion-title *ngIf="pageTitle">{{pageTitle}}</ion-title>
+
+    <ng-content></ng-content>
+
+</ion-toolbar>
